@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black">
+
+    <include
+        android:id="@+id/board"
+        layout="@layout/calculator_keyboard"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal|bottom"></include>
+
+    <LinearLayout
+        android:id="@+id/display"
+        android:layout_width="match_parent"
+        android:layout_height="320dp"
+        android:orientation="vertical">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="10">
+
+            <!--android:overScrollMode="never" 去除下拉或上拉时,顶部的或底部的渐变色-->
+            <ListView
+                android:id="@+id/listView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:divider="@null"
+                android:overScrollMode="never"
+                android:paddingLeft="20dp"
+                android:paddingRight="10dp"
+                android:paddingTop="10dp"
+                android:scrollbars="none" />
+
+            <ImageView
+                android:id="@+id/deleteAll"
+                style="@style/image_margin"
+                android:layout_gravity="bottom"
+                android:layout_marginBottom="10dp"
+                android:src="@mipmap/iteminfo_delete" />
+        </FrameLayout>
+
+        <EditText
+            android:id="@+id/text2"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="2"
+            android:background="@null"
+            android:cursorVisible="false"
+            android:focusableInTouchMode="false"
+            android:gravity="right|center"
+            android:singleLine="true"
+            android:text="0"
+            android:textColor="@color/white"
+            android:textSize="@dimen/input_screen_key" />
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/close"
+        style="@style/image_margin"
+        android:src="@mipmap/iteminfo_close" />
+</FrameLayout>
+

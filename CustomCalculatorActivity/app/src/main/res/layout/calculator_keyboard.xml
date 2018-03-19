@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableRow xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/table"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TableLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <TableRow>
+
+            <Button
+                android:id="@+id/empty"
+                style="@style/Calculator_symbol"
+                android:text="C" />
+
+            <Button
+                android:id="@+id/divide"
+                style="@style/Calculator_symbol"
+                android:text="÷" />
+
+            <Button
+                android:id="@+id/multiple"
+                style="@style/Calculator_symbol"
+                android:text="×" />
+
+        </TableRow>
+
+        <TableRow>
+
+            <Button
+                android:id="@+id/seven"
+                style="@style/Calculator_number"
+                android:text="7" />
+
+            <Button
+                android:id="@+id/eight"
+                style="@style/Calculator_number"
+                android:text="8" />
+
+            <Button
+                android:id="@+id/nine"
+                style="@style/Calculator_number"
+                android:text="9" />
+        </TableRow>
+
+        <TableRow>
+
+            <Button
+                android:id="@+id/four"
+                style="@style/Calculator_number"
+                android:text="4" />
+
+            <Button
+                android:id="@+id/five"
+                style="@style/Calculator_number"
+                android:text="5" />
+
+            <Button
+                android:id="@+id/six"
+                style="@style/Calculator_number"
+                android:text="6" />
+
+        </TableRow>
+
+        <TableRow>
+
+            <Button
+                android:id="@+id/one"
+                style="@style/Calculator_number"
+                android:text="1" />
+
+            <Button
+                android:id="@+id/two"
+                style="@style/Calculator_number"
+                android:text="2" />
+
+            <Button
+                android:id="@+id/three"
+                style="@style/Calculator_number"
+                android:text="3" />
+
+        </TableRow>
+
+        <TableRow>
+
+            <Button
+                android:id="@+id/zero"
+                style="@style/Calculator_number"
+                android:text="0" />
+
+            <Button
+                android:id="@+id/dot"
+                style="@style/Calculator_number"
+                android:text="." />
+
+            <Button
+                android:id="@+id/dis"
+                style="@style/Calculator_symbol"
+                android:text="Dis"
+                android:textAllCaps="false" />
+
+        </TableRow>
+    </TableLayout>
+
+    <TableLayout>
+
+        <TableRow>
+
+            <Button
+                android:id="@+id/delete"
+                style="@style/Calculator_symbol"
+                android:text="←"
+                android:textStyle="bold" />
+        </TableRow>
+
+        <TableRow>
+
+            <Button
+                android:id="@+id/minus"
+                style="@style/Calculator_symbol"
+                android:text="-" />
+        </TableRow>
+
+        <TableRow>
+
+            <Button
+                android:id="@+id/plus"
+                style="@style/Calculator_symbol"
+                android:text="+" />
+        </TableRow>
+
+        <TableRow>
+
+            <Button
+                android:id="@+id/equal"
+                style="@style/Calculator_symbol"
+                android:text="="
+                android:textStyle="bold" />
+        </TableRow>
+    </TableLayout>
+</TableRow>

@@ -1,0 +1,4 @@
+<resources>
+    <dimen name="show_screen">20dp</dimen>
+    <dimen name="input_screen_key">30dp</dimen>
+</resources>
